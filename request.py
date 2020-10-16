@@ -6,8 +6,8 @@ headers = {'accept': 'text/plain',
            'Accept': 'application/json'}
 
 url = 'https://auth-api.rabota.ua/Login'
-payload = { 'username': 'trak@vesedia.com',
-            'password': 'vtuf12'}
+payload = { 'username': 'email',
+            'password': 'password'}
 
 response = requests.post(url, data = payload, headers = headers)
 logger.debug(response)
